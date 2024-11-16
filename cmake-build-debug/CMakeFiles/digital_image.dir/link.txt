@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\digital_image.dir/objects.a
+D:\software\mingw64\bin\ar.exe qc CMakeFiles\digital_image.dir/objects.a @CMakeFiles\digital_image.dir\objects1.rsp
+D:\software\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\digital_image.dir/objects.a -Wl,--no-whole-archive -o digital_image.exe -Wl,--out-implib,libdigital_image.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\digital_image.dir\linkLibs.rsp
