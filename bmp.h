@@ -45,6 +45,7 @@ void saveGrayBMPWithPalette(const std::string& filename, BMPHeader header, BMPIn
                             const std::vector<uint8_t>& grayData, int width, int height);
 bool readGrayBMP(const std::string& filename, std::vector<uint8_t>& grayData, int& width, int& height,
                  BMPHeader& header,BMPInfoHeader& infoHeader);
+bool readGrayBMP(const std::string& filename, std::vector<uint8_t>& grayData, int& width, int& height);
 void run_bmp_lab();
 
 #endif //DIGITAL_IMAGE_BMP_H

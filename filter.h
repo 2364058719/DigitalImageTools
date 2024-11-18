@@ -13,6 +13,10 @@
 #include <cstring>
 #include "bmp.h"
 
+void meanFilter(const std::vector<uint8_t>& input, std::vector<uint8_t>& output, int width, int height,
+                int kernelSize);
+void medianFilter(const std::vector<uint8_t>& input, std::vector<uint8_t>& output, int width, int height,
+                  int kernelSize);
 void run_filter_lab();
 
 #endif //DIGITAL_IMAGE_FILTER_H

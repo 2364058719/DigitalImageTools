@@ -136,6 +136,61 @@ bool readGrayBMP(const std::string& filename, std::vector<uint8_t>& grayData, in
     return true;
 }
 
+//读取灰度BMP图像
+bool readGrayBMP(const std::string& filename, std::vector<uint8_t>& grayData, int& width, int& height){
+    std::ifstream file(filename, std::ios::binary);
+
+    // 检查文件是否存在
+    if (!std::filesystem::exists(filename)) {
+        std::cerr << "错误：找不到文件 " << filename << "。请检查路径是否正确。" << std::endl;
+        return false;
+    }
+    if (!file) {
+        std::cerr << "无法打开文件 " << filename << std::endl;
+        return false;
+    }
+
+    BMPHeader header;
+    BMPInfoHeader infoHeader;
+
+    // 读取文件头和信息头
+    file.read(reinterpret_cast<char*>(&header), sizeof(header));
+    file.read(reinterpret_cast<char*>(&infoHeader), sizeof(infoHeader));
+
+    // 检查是否为8位灰度图像
+    if (infoHeader.bit_count != 8) {
+        std::cerr << "错误：不是8位灰度图像" << std::endl;
+        return false;
+    }
+
+    // 获取图像宽度和高度
+    width = infoHeader.width;
+    height = infoHeader.height;
+
+    // 跳过调色板（256*4字节）
+    file.seekg(header.offset_data, std::ios::beg);
+
+    // 读取图像数据
+    int rowStride = (width + 3) & ~3; // 4字节对齐
+    grayData.resize(height * rowStride);
+    for (int y = 0; y < height; ++y) {
+        file.read(reinterpret_cast<char*>(&grayData[y * rowStride]), rowStride);
+    }
+
+    // 去除每行末尾的填充字节
+    if (rowStride != width) {
+        std::vector<uint8_t> pureGrayData;
+        pureGrayData.reserve(width * height);
+        for (int y = 0; y < height; ++y) {
+            pureGrayData.insert(pureGrayData.end(), grayData.begin() + y * rowStride, grayData.begin() + y * rowStride + width);
+        }
+        grayData = std::move(pureGrayData);
+    }
+
+    file.close();
+    return true;
+}
+
 void run_bmp_lab() {
 
     std::string inputfile = R"(D:\Code\C++Project\digital_image\images\rgb.bmp)";
