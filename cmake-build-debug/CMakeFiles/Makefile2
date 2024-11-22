@@ -80,12 +80,12 @@ clean: CMakeFiles/digital_image.dir/clean
 CMakeFiles/digital_image.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Code\C++Project\digital_image\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target digital_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Code\C++Project\digital_image\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target digital_image"
 .PHONY : CMakeFiles/digital_image.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/digital_image.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\C++Project\digital_image\cmake-build-debug\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\C++Project\digital_image\cmake-build-debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/digital_image.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\C++Project\digital_image\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/digital_image.dir/rule

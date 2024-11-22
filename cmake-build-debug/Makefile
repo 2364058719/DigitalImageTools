@@ -224,6 +224,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+transform.obj: transform.cpp.obj
+.PHONY : transform.obj
+
+# target to build an object file
+transform.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/transform.cpp.obj
+.PHONY : transform.cpp.obj
+
+transform.i: transform.cpp.i
+.PHONY : transform.i
+
+# target to preprocess a source file
+transform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/transform.cpp.i
+.PHONY : transform.cpp.i
+
+transform.s: transform.cpp.s
+.PHONY : transform.s
+
+# target to generate assembly for a file
+transform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/transform.cpp.s
+.PHONY : transform.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -245,6 +269,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... transform.obj
+	@echo ... transform.i
+	@echo ... transform.s
 .PHONY : help
 
 

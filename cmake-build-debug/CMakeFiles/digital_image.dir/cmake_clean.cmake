@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/digital_image.dir/histogram.cpp.obj.d"
   "CMakeFiles/digital_image.dir/main.cpp.obj"
   "CMakeFiles/digital_image.dir/main.cpp.obj.d"
+  "CMakeFiles/digital_image.dir/transform.cpp.obj"
+  "CMakeFiles/digital_image.dir/transform.cpp.obj.d"
   "digital_image.exe"
   "digital_image.exe.manifest"
   "digital_image.pdb"

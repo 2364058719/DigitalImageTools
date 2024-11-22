@@ -101,6 +101,12 @@
 		<Unit filename="D:/Code/C++Project/digital_image/main.cpp">
 			<Option target="digital_image"/>
 		</Unit>
+		<Unit filename="D:/Code/C++Project/digital_image/transform.cpp">
+			<Option target="digital_image"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Project/digital_image/transform.h">
+			<Option target="digital_image"/>
+		</Unit>
 		<Unit filename="D:/Code/C++Project/digital_image/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

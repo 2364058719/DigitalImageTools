@@ -210,4 +210,5 @@ CMakeFiles/digital_image.dir/main.cpp.obj: \
  D:\Code\C++Project\digital_image\filter.h \
  D:/software/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstring \
  D:/software/mingw64/x86_64-w64-mingw32/include/string.h \
- D:/software/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+ D:/software/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ D:\Code\C++Project\digital_image\transform.h

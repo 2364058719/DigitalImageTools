@@ -2,6 +2,7 @@
 #include "bmp.h"
 #include "histogram.h"
 #include "filter.h"
+#include "transform.h"
 
 int main() {
     system("chcp 65001");
@@ -35,7 +36,7 @@ int main() {
         run_filter_lab();
     }
     else if (ops==4){
-
+        run_transform_lab();
     }
     else if (ops==5){
 

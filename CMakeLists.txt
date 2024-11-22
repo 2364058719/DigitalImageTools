@@ -9,4 +9,6 @@ add_executable(digital_image main.cpp
         histogram.cpp
         histogram.h
         filter.cpp
-        filter.h)
+        filter.h
+        transform.cpp
+        transform.h)

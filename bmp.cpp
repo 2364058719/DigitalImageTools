@@ -56,6 +56,8 @@ void saveGrayBMPWithPalette(const std::string& filename, BMPHeader header, BMPIn
     header.offset_data = sizeof(BMPHeader) + sizeof(BMPInfoHeader) + 256 * 4;
     infoHeader.bit_count = 8;           // 修改为8位
     infoHeader.size_image = paddedGrayData.size();
+    infoHeader.width = width;
+    infoHeader.height = height;
 
     std::ofstream outFile(filename, std::ios::binary);
     if (!outFile) {
