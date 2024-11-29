@@ -5,11 +5,20 @@
 #include "threshold.h"
 
 // 计算直方图
-std::vector<int> calculateHistogram(const std::vector<uint8_t>& image) {
+std::vector<int> calculateHistogram(const std::vector<uint8_t>& image){
     std::vector<int> histogram(256, 0);
     for (auto pixel : image) {
         histogram[pixel]++;
     }
+    return histogram;
+}
+
+std::vector<int> calculateHistogram(const std::vector<uint8_t>& image, int threshold) {
+    std::vector<int> histogram(256, 0);
+    for (auto pixel : image) {
+        histogram[pixel]++;
+    }
+    histogram[threshold]=0;
     return histogram;
 }
 
@@ -21,9 +30,19 @@ void applyThreshold(const std::vector<uint8_t>& image, std::vector<uint8_t>& bin
     }
 }
 
+std::vector<int> applyThresholdwithHistogram(const std::vector<uint8_t>& image, std::vector<uint8_t>& binary, int threshold){
+    std::vector<int> histogram(256, 0);
+    binary.resize(image.size());
+    for (size_t i = 0; i < image.size(); ++i) {
+        binary[i] = (image[i] > threshold) ? 255 : 0;
+        histogram[image[i]] += (image[i] > threshold) ? 1 : 0;
+    }
+    return histogram;
+}
+
 // 迭代阈值法
 int iterativeThresholding(const std::vector<uint8_t>& image) {
-    int t0 = 127, t1 = 0;
+    int t0 = 127, t1 = 127;
     do {
         t0 = t1;
         int sum1 = 0, sum2 = 0, count1 = 0, count2 = 0;
@@ -94,10 +113,13 @@ void run_threshold_lab(){
     std::cout << "Iterative Threshold: " << iterThreshold << std::endl;
     std::cout << "Otsu Threshold: " << otsuThresholdValue << std::endl;
 
-    std::vector<uint8_t> binaryImage;
-    applyThreshold(grayData_lena, binaryImage, otsuThresholdValue);
+    int ThresholdValue = otsuThresholdValue;
 
-    auto histogram = calculateHistogram(binaryImage);
+    std::vector<uint8_t> binaryImage;
+    applyThreshold(grayData_lena, binaryImage, ThresholdValue);
+//    auto histogram = applyThresholdwithHistogram(grayData_lena, binaryImage, ThresholdValue);
+
+    auto histogram = calculateHistogram(grayData_lena,ThresholdValue);
     printHistogram(histogram,R"(D:\Code\C++Project\digital_image\images\threshold_lena_histogram.bmp)");
 
     saveGrayBMPWithPalette(R"(D:\Code\C++Project\digital_image\images\threshold_lena.bmp)",BMPHeader(header_lena),

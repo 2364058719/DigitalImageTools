@@ -16,6 +16,13 @@
 #include "histogram.h"
 
 void run_threshold_lab();
+void applyThreshold(const std::vector<uint8_t>& image, std::vector<uint8_t>& binary, int threshold);
+int iterativeThresholding(const std::vector<uint8_t>& image);
+int otsuThreshold(const std::vector<uint8_t>& image);
+std::vector<int> calculateHistogram(const std::vector<uint8_t>& image, int threshold);
+std::vector<int> calculateHistogram(const std::vector<uint8_t>& image);
+std::vector<int> applyThresholdwithHistogram(const std::vector<uint8_t>& image, std::vector<uint8_t>& binary,
+                                             int threshold);
 
 
 #endif //DIGITAL_IMAGE_THRESHOLD_H
