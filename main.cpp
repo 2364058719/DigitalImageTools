@@ -3,6 +3,7 @@
 #include "histogram.h"
 #include "filter.h"
 #include "transform.h"
+#include "threshold.h"
 
 int main() {
     system("chcp 65001");
@@ -39,7 +40,7 @@ int main() {
         run_transform_lab();
     }
     else if (ops==5){
-
+        run_threshold_lab();
     }
     else if (ops==6){
 

@@ -224,6 +224,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+threshold.obj: threshold.cpp.obj
+.PHONY : threshold.obj
+
+# target to build an object file
+threshold.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/threshold.cpp.obj
+.PHONY : threshold.cpp.obj
+
+threshold.i: threshold.cpp.i
+.PHONY : threshold.i
+
+# target to preprocess a source file
+threshold.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/threshold.cpp.i
+.PHONY : threshold.cpp.i
+
+threshold.s: threshold.cpp.s
+.PHONY : threshold.s
+
+# target to generate assembly for a file
+threshold.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/threshold.cpp.s
+.PHONY : threshold.cpp.s
+
 transform.obj: transform.cpp.obj
 .PHONY : transform.obj
 
@@ -269,6 +293,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... threshold.obj
+	@echo ... threshold.i
+	@echo ... threshold.s
 	@echo ... transform.obj
 	@echo ... transform.i
 	@echo ... transform.s

@@ -11,4 +11,6 @@ add_executable(digital_image main.cpp
         filter.cpp
         filter.h
         transform.cpp
-        transform.h)
+        transform.h
+        threshold.cpp
+        threshold.h)
