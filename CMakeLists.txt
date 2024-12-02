@@ -13,4 +13,8 @@ add_executable(digital_image main.cpp
         transform.cpp
         transform.h
         threshold.cpp
-        threshold.h)
+        threshold.h
+        region.cpp
+        region.h
+        edgeDetection.cpp
+        edgeDetection.h)

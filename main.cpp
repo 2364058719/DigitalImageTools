@@ -4,6 +4,8 @@
 #include "filter.h"
 #include "transform.h"
 #include "threshold.h"
+#include "region.h"
+#include "edgeDetection.h"
 
 int main() {
     system("chcp 65001");
@@ -43,10 +45,10 @@ int main() {
         run_threshold_lab();
     }
     else if (ops==6){
-
+        run_region_lab();
     }
     else if (ops==7){
-
+        run_edgeDetection_lab();
     }
     else if (ops==8){
 

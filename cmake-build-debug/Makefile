@@ -152,6 +152,30 @@ bmp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/bmp.cpp.s
 .PHONY : bmp.cpp.s
 
+edgeDetection.obj: edgeDetection.cpp.obj
+.PHONY : edgeDetection.obj
+
+# target to build an object file
+edgeDetection.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/edgeDetection.cpp.obj
+.PHONY : edgeDetection.cpp.obj
+
+edgeDetection.i: edgeDetection.cpp.i
+.PHONY : edgeDetection.i
+
+# target to preprocess a source file
+edgeDetection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/edgeDetection.cpp.i
+.PHONY : edgeDetection.cpp.i
+
+edgeDetection.s: edgeDetection.cpp.s
+.PHONY : edgeDetection.s
+
+# target to generate assembly for a file
+edgeDetection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/edgeDetection.cpp.s
+.PHONY : edgeDetection.cpp.s
+
 filter.obj: filter.cpp.obj
 .PHONY : filter.obj
 
@@ -224,6 +248,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+region.obj: region.cpp.obj
+.PHONY : region.obj
+
+# target to build an object file
+region.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/region.cpp.obj
+.PHONY : region.cpp.obj
+
+region.i: region.cpp.i
+.PHONY : region.i
+
+# target to preprocess a source file
+region.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/region.cpp.i
+.PHONY : region.cpp.i
+
+region.s: region.cpp.s
+.PHONY : region.s
+
+# target to generate assembly for a file
+region.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/region.cpp.s
+.PHONY : region.cpp.s
+
 threshold.obj: threshold.cpp.obj
 .PHONY : threshold.obj
 
@@ -284,6 +332,9 @@ help:
 	@echo ... bmp.obj
 	@echo ... bmp.i
 	@echo ... bmp.s
+	@echo ... edgeDetection.obj
+	@echo ... edgeDetection.i
+	@echo ... edgeDetection.s
 	@echo ... filter.obj
 	@echo ... filter.i
 	@echo ... filter.s
@@ -293,6 +344,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... region.obj
+	@echo ... region.i
+	@echo ... region.s
 	@echo ... threshold.obj
 	@echo ... threshold.i
 	@echo ... threshold.s
