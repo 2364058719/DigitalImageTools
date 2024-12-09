@@ -4,47 +4,47 @@
 
 #include "edgeDetection.h"
 
-// 卷积操作
-//void applyKernel(const std::vector<uint8_t>& input, std::vector<uint8_t>& output, int width, int height, const std::vector<int>& kernel, int kernelSize) {
-//    int halfSize = kernelSize / 2;
-//    output.assign(input.size(), 0);
-//
-//    for (int y = halfSize; y < height - halfSize; ++y) {
-//        for (int x = halfSize; x < width - halfSize; ++x) {
-//            int sum = 0;
-//            for (int ky = -halfSize; ky <= halfSize; ++ky) {
-//                for (int kx = -halfSize; kx <= halfSize; ++kx) {
-//                    int pixel = input[(y + ky) * width + (x + kx)];
-//                    int weight = kernel[(ky + halfSize) * kernelSize + (kx + halfSize)];
-//                    sum += pixel * weight;
-//                }
-//            }
-//            output[y * width + x] = std::clamp(std::abs(sum), 0, 255);
-//        }
-//    }
-//}
+//卷积操作
 void applyKernel(const std::vector<uint8_t>& input, std::vector<uint8_t>& output, int width, int height, const std::vector<int>& kernel, int kernelSize) {
     int halfSize = kernelSize / 2;
     output.assign(input.size(), 0);
 
-    for (int y = 0; y < height; ++y) {
-        for (int x = 0; x < width; ++x) {
+    for (int y = halfSize; y < height - halfSize; ++y) {
+        for (int x = halfSize; x < width - halfSize; ++x) {
             int sum = 0;
             for (int ky = -halfSize; ky <= halfSize; ++ky) {
                 for (int kx = -halfSize; kx <= halfSize; ++kx) {
-                    int ny = y + ky;
-                    int nx = x + kx;
-                    if (ny >= 0 && ny < height && nx >= 0 && nx < width) { // 确保索引在范围内
-                        int pixel = input[ny * width + nx];
-                        int weight = kernel[(ky + halfSize) * kernelSize + (kx + halfSize)];
-                        sum += pixel * weight;
-                    }
+                    int pixel = input[(y + ky) * width + (x + kx)];
+                    int weight = kernel[(ky + halfSize) * kernelSize + (kx + halfSize)];
+                    sum += pixel * weight;
                 }
             }
             output[y * width + x] = std::clamp(std::abs(sum), 0, 255);
         }
     }
 }
+//void applyKernel(const std::vector<uint8_t>& input, std::vector<uint8_t>& output, int width, int height, const std::vector<int>& kernel, int kernelSize) {
+//    int halfSize = kernelSize / 2;
+//    output.assign(input.size(), 0);
+//
+//    for (int y = 0; y < height; ++y) {
+//        for (int x = 0; x < width; ++x) {
+//            int sum = 0;
+//            for (int ky = -halfSize; ky <= halfSize; ++ky) {
+//                for (int kx = -halfSize; kx <= halfSize; ++kx) {
+//                    int ny = y + ky;
+//                    int nx = x + kx;
+//                    if (ny >= 0 && ny < height && nx >= 0 && nx < width) { // 确保索引在范围内
+//                        int pixel = input[ny * width + nx];
+//                        int weight = kernel[(ky + halfSize) * kernelSize + (kx + halfSize)];
+//                        sum += pixel * weight;
+//                    }
+//                }
+//            }
+//            output[y * width + x] = std::clamp(std::abs(sum), 0, 255);
+//        }
+//    }
+//}
 
 
 // Prewitt 算子
@@ -71,21 +71,30 @@ void sobelEdgeDetection(const std::vector<uint8_t>& image, std::vector<uint8_t>&
     applyKernel(image, gradY, width, height, sobelY, 3);
 
     for (size_t i = 0; i < image.size(); ++i) {
-        output[i] = std::clamp(std::sqrt(gradX[i] * gradX[i] + gradY[i] * gradY[i]), 0.0, 255.0);
+        output[i] = std::clamp(static_cast<int>(std::sqrt(gradX[i] * gradX[i] + gradY[i] * gradY[i])), 0, 255);
     }
 }
 
 // LOG 算子（拉普拉斯高斯）
 void logEdgeDetection(const std::vector<uint8_t>& image, std::vector<uint8_t>& output, int width, int height) {
-    std::vector<int> logKernel = {0,  1,  1,  2,  1,  1,  0,
-                                  1,  2,  4,  8,  4,  2,  1,
-                                  1,  4,  8, 16,  8,  4,  1,
-                                  2,  8, 16, 32, 16,  8,  2,
-                                  1,  4,  8, 16,  8,  4,  1,
-                                  1,  2,  4,  8,  4,  2,  1,
-                                  0,  1,  1,  2,  1,  1,  0};
+//    std::vector<int> logKernel = {0,  1,  1,  2,  1,  1,  0,
+//                                  1,  2,  4,  8,  4,  2,  1,
+//                                  1,  4,  8, 16,  8,  4,  1,
+//                                  2,  8, 16, 32, 16,  8,  2,
+//                                  1,  4,  8, 16,  8,  4,  1,
+//                                  1,  2,  4,  8,  4,  2,  1,
+//                                  0,  1,  1,  2,  1,  1,  0};
+    std::vector<int> logKernel = {
+            1,1,1,
+            1,-8,1,
+            1,1,1
+    };
 
-    applyKernel(image, output, width, height, logKernel, 7);
+    applyKernel(image, output, width, height, logKernel, 3);
+
+//    for(size_t i=0;i<image.size();++i){
+//        output[i] = std::clamp(static_cast<int>(std::abs(output[i])), 0, 255);
+//    }
 }
 
 void run_edgeDetection_lab(){

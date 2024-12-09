@@ -212,4 +212,11 @@ CMakeFiles/digital_image.dir/main.cpp.obj: \
  D:/software/mingw64/x86_64-w64-mingw32/include/string.h \
  D:/software/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
  D:\Code\C++Project\digital_image\transform.h \
- D:\Code\C++Project\digital_image\threshold.h
+ D:\Code\C++Project\digital_image\threshold.h \
+ D:\Code\C++Project\digital_image\region.h \
+ D:/software/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/queue \
+ D:/software/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/deque \
+ D:/software/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_deque.h \
+ D:/software/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/deque.tcc \
+ D:/software/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_queue.h \
+ D:\Code\C++Project\digital_image\edgeDetection.h
