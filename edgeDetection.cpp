@@ -78,12 +78,14 @@ void sobelEdgeDetection(const std::vector<uint8_t>& image, std::vector<uint8_t>&
 // LOG 算子（拉普拉斯高斯）
 void logEdgeDetection(const std::vector<uint8_t>& image, std::vector<uint8_t>& output, int width, int height) {
     std::vector<int> logKernel = {
-            0,1,0,
-            1,-4,1,
-            0,1,0
+            0,0,-1,0,0,
+            0,-1,-2,-1,0,
+            -1,-2,16,-2,-1,
+            0,-1,-2,-1,0,
+            0,0,-1,0,0
     };
 
-    applyKernel(image, output, width, height, logKernel, 3);
+    applyKernel(image, output, width, height, logKernel, 5);
 
 }
 
