@@ -219,4 +219,7 @@ CMakeFiles/digital_image.dir/main.cpp.obj: \
  D:/software/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_deque.h \
  D:/software/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/deque.tcc \
  D:/software/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_queue.h \
- D:\Code\C++Project\digital_image\edgeDetection.h
+ D:\Code\C++Project\digital_image\edgeDetection.h \
+ D:\Code\C++Project\digital_image\houghTransform.h \
+ D:\Code\C++Project\digital_image\regionLabel.h \
+ D:\Code\C++Project\digital_image\extractContour.h
