@@ -92,6 +92,12 @@
 		<Unit filename="D:/Code/C++Project/digital_image/edgeDetection.h">
 			<Option target="digital_image"/>
 		</Unit>
+		<Unit filename="D:/Code/C++Project/digital_image/extractContour.cpp">
+			<Option target="digital_image"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Project/digital_image/extractContour.h">
+			<Option target="digital_image"/>
+		</Unit>
 		<Unit filename="D:/Code/C++Project/digital_image/filter.cpp">
 			<Option target="digital_image"/>
 		</Unit>
@@ -104,6 +110,12 @@
 		<Unit filename="D:/Code/C++Project/digital_image/histogram.h">
 			<Option target="digital_image"/>
 		</Unit>
+		<Unit filename="D:/Code/C++Project/digital_image/houghTransform.cpp">
+			<Option target="digital_image"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Project/digital_image/houghTransform.h">
+			<Option target="digital_image"/>
+		</Unit>
 		<Unit filename="D:/Code/C++Project/digital_image/main.cpp">
 			<Option target="digital_image"/>
 		</Unit>
@@ -111,6 +123,12 @@
 			<Option target="digital_image"/>
 		</Unit>
 		<Unit filename="D:/Code/C++Project/digital_image/region.h">
+			<Option target="digital_image"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Project/digital_image/regionLabel.cpp">
+			<Option target="digital_image"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Project/digital_image/regionLabel.h">
 			<Option target="digital_image"/>
 		</Unit>
 		<Unit filename="D:/Code/C++Project/digital_image/threshold.cpp">

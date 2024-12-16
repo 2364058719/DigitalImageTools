@@ -1,0 +1,12 @@
+//
+// Created by 23640 on 2024/12/16.
+//
+
+#ifndef DIGITAL_IMAGE_HOUGHTRANSFORM_H
+#define DIGITAL_IMAGE_HOUGHTRANSFORM_H
+
+
+void run_hough_lab();
+
+
+#endif //DIGITAL_IMAGE_HOUGHTRANSFORM_H

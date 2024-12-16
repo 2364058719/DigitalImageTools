@@ -17,4 +17,10 @@ add_executable(digital_image main.cpp
         region.cpp
         region.h
         edgeDetection.cpp
-        edgeDetection.h)
+        edgeDetection.h
+        houghTransform.cpp
+        houghTransform.h
+        regionLabel.cpp
+        regionLabel.h
+        extractContour.cpp
+        extractContour.h)

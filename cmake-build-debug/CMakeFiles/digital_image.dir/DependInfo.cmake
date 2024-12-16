@@ -10,10 +10,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Code/C++Project/digital_image/bmp.cpp" "CMakeFiles/digital_image.dir/bmp.cpp.obj" "gcc" "CMakeFiles/digital_image.dir/bmp.cpp.obj.d"
   "D:/Code/C++Project/digital_image/edgeDetection.cpp" "CMakeFiles/digital_image.dir/edgeDetection.cpp.obj" "gcc" "CMakeFiles/digital_image.dir/edgeDetection.cpp.obj.d"
+  "D:/Code/C++Project/digital_image/extractContour.cpp" "CMakeFiles/digital_image.dir/extractContour.cpp.obj" "gcc" "CMakeFiles/digital_image.dir/extractContour.cpp.obj.d"
   "D:/Code/C++Project/digital_image/filter.cpp" "CMakeFiles/digital_image.dir/filter.cpp.obj" "gcc" "CMakeFiles/digital_image.dir/filter.cpp.obj.d"
   "D:/Code/C++Project/digital_image/histogram.cpp" "CMakeFiles/digital_image.dir/histogram.cpp.obj" "gcc" "CMakeFiles/digital_image.dir/histogram.cpp.obj.d"
+  "D:/Code/C++Project/digital_image/houghTransform.cpp" "CMakeFiles/digital_image.dir/houghTransform.cpp.obj" "gcc" "CMakeFiles/digital_image.dir/houghTransform.cpp.obj.d"
   "D:/Code/C++Project/digital_image/main.cpp" "CMakeFiles/digital_image.dir/main.cpp.obj" "gcc" "CMakeFiles/digital_image.dir/main.cpp.obj.d"
   "D:/Code/C++Project/digital_image/region.cpp" "CMakeFiles/digital_image.dir/region.cpp.obj" "gcc" "CMakeFiles/digital_image.dir/region.cpp.obj.d"
+  "D:/Code/C++Project/digital_image/regionLabel.cpp" "CMakeFiles/digital_image.dir/regionLabel.cpp.obj" "gcc" "CMakeFiles/digital_image.dir/regionLabel.cpp.obj.d"
   "D:/Code/C++Project/digital_image/threshold.cpp" "CMakeFiles/digital_image.dir/threshold.cpp.obj" "gcc" "CMakeFiles/digital_image.dir/threshold.cpp.obj.d"
   "D:/Code/C++Project/digital_image/transform.cpp" "CMakeFiles/digital_image.dir/transform.cpp.obj" "gcc" "CMakeFiles/digital_image.dir/transform.cpp.obj.d"
   )

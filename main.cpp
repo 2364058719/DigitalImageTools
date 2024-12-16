@@ -6,6 +6,9 @@
 #include "threshold.h"
 #include "region.h"
 #include "edgeDetection.h"
+#include "houghTransform.h"
+#include "regionLabel.h"
+#include "extractContour.h"
 
 int main() {
     system("chcp 65001");
@@ -51,13 +54,13 @@ int main() {
         run_edgeDetection_lab();
     }
     else if (ops==8){
-
+        run_hough_lab();
     }
     else if (ops==9){
-
+        run_regionLabel_lab();
     }
     else if (ops==10){
-
+        run_extractContour_lab();
     }
     return 0;
 }

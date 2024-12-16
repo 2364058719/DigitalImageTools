@@ -180,6 +180,48 @@ CMakeFiles/digital_image.dir/edgeDetection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/digital_image.dir/edgeDetection.cpp.s"
 	D:\software\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\C++Project\digital_image\edgeDetection.cpp -o CMakeFiles\digital_image.dir\edgeDetection.cpp.s
 
+CMakeFiles/digital_image.dir/houghTransform.cpp.obj: CMakeFiles/digital_image.dir/flags.make
+CMakeFiles/digital_image.dir/houghTransform.cpp.obj: D:/Code/C++Project/digital_image/houghTransform.cpp
+CMakeFiles/digital_image.dir/houghTransform.cpp.obj: CMakeFiles/digital_image.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\C++Project\digital_image\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/digital_image.dir/houghTransform.cpp.obj"
+	D:\software\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/digital_image.dir/houghTransform.cpp.obj -MF CMakeFiles\digital_image.dir\houghTransform.cpp.obj.d -o CMakeFiles\digital_image.dir\houghTransform.cpp.obj -c D:\Code\C++Project\digital_image\houghTransform.cpp
+
+CMakeFiles/digital_image.dir/houghTransform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/digital_image.dir/houghTransform.cpp.i"
+	D:\software\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\C++Project\digital_image\houghTransform.cpp > CMakeFiles\digital_image.dir\houghTransform.cpp.i
+
+CMakeFiles/digital_image.dir/houghTransform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/digital_image.dir/houghTransform.cpp.s"
+	D:\software\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\C++Project\digital_image\houghTransform.cpp -o CMakeFiles\digital_image.dir\houghTransform.cpp.s
+
+CMakeFiles/digital_image.dir/regionLabel.cpp.obj: CMakeFiles/digital_image.dir/flags.make
+CMakeFiles/digital_image.dir/regionLabel.cpp.obj: D:/Code/C++Project/digital_image/regionLabel.cpp
+CMakeFiles/digital_image.dir/regionLabel.cpp.obj: CMakeFiles/digital_image.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\C++Project\digital_image\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/digital_image.dir/regionLabel.cpp.obj"
+	D:\software\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/digital_image.dir/regionLabel.cpp.obj -MF CMakeFiles\digital_image.dir\regionLabel.cpp.obj.d -o CMakeFiles\digital_image.dir\regionLabel.cpp.obj -c D:\Code\C++Project\digital_image\regionLabel.cpp
+
+CMakeFiles/digital_image.dir/regionLabel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/digital_image.dir/regionLabel.cpp.i"
+	D:\software\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\C++Project\digital_image\regionLabel.cpp > CMakeFiles\digital_image.dir\regionLabel.cpp.i
+
+CMakeFiles/digital_image.dir/regionLabel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/digital_image.dir/regionLabel.cpp.s"
+	D:\software\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\C++Project\digital_image\regionLabel.cpp -o CMakeFiles\digital_image.dir\regionLabel.cpp.s
+
+CMakeFiles/digital_image.dir/extractContour.cpp.obj: CMakeFiles/digital_image.dir/flags.make
+CMakeFiles/digital_image.dir/extractContour.cpp.obj: D:/Code/C++Project/digital_image/extractContour.cpp
+CMakeFiles/digital_image.dir/extractContour.cpp.obj: CMakeFiles/digital_image.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\C++Project\digital_image\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/digital_image.dir/extractContour.cpp.obj"
+	D:\software\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/digital_image.dir/extractContour.cpp.obj -MF CMakeFiles\digital_image.dir\extractContour.cpp.obj.d -o CMakeFiles\digital_image.dir\extractContour.cpp.obj -c D:\Code\C++Project\digital_image\extractContour.cpp
+
+CMakeFiles/digital_image.dir/extractContour.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/digital_image.dir/extractContour.cpp.i"
+	D:\software\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\C++Project\digital_image\extractContour.cpp > CMakeFiles\digital_image.dir\extractContour.cpp.i
+
+CMakeFiles/digital_image.dir/extractContour.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/digital_image.dir/extractContour.cpp.s"
+	D:\software\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\C++Project\digital_image\extractContour.cpp -o CMakeFiles\digital_image.dir\extractContour.cpp.s
+
 # Object files for target digital_image
 digital_image_OBJECTS = \
 "CMakeFiles/digital_image.dir/main.cpp.obj" \
@@ -189,7 +231,10 @@ digital_image_OBJECTS = \
 "CMakeFiles/digital_image.dir/transform.cpp.obj" \
 "CMakeFiles/digital_image.dir/threshold.cpp.obj" \
 "CMakeFiles/digital_image.dir/region.cpp.obj" \
-"CMakeFiles/digital_image.dir/edgeDetection.cpp.obj"
+"CMakeFiles/digital_image.dir/edgeDetection.cpp.obj" \
+"CMakeFiles/digital_image.dir/houghTransform.cpp.obj" \
+"CMakeFiles/digital_image.dir/regionLabel.cpp.obj" \
+"CMakeFiles/digital_image.dir/extractContour.cpp.obj"
 
 # External object files for target digital_image
 digital_image_EXTERNAL_OBJECTS =
@@ -202,11 +247,14 @@ digital_image.exe: CMakeFiles/digital_image.dir/transform.cpp.obj
 digital_image.exe: CMakeFiles/digital_image.dir/threshold.cpp.obj
 digital_image.exe: CMakeFiles/digital_image.dir/region.cpp.obj
 digital_image.exe: CMakeFiles/digital_image.dir/edgeDetection.cpp.obj
+digital_image.exe: CMakeFiles/digital_image.dir/houghTransform.cpp.obj
+digital_image.exe: CMakeFiles/digital_image.dir/regionLabel.cpp.obj
+digital_image.exe: CMakeFiles/digital_image.dir/extractContour.cpp.obj
 digital_image.exe: CMakeFiles/digital_image.dir/build.make
 digital_image.exe: CMakeFiles/digital_image.dir/linkLibs.rsp
 digital_image.exe: CMakeFiles/digital_image.dir/objects1.rsp
 digital_image.exe: CMakeFiles/digital_image.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Code\C++Project\digital_image\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable digital_image.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Code\C++Project\digital_image\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable digital_image.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\digital_image.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

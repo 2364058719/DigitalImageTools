@@ -176,6 +176,30 @@ edgeDetection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/edgeDetection.cpp.s
 .PHONY : edgeDetection.cpp.s
 
+extractContour.obj: extractContour.cpp.obj
+.PHONY : extractContour.obj
+
+# target to build an object file
+extractContour.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/extractContour.cpp.obj
+.PHONY : extractContour.cpp.obj
+
+extractContour.i: extractContour.cpp.i
+.PHONY : extractContour.i
+
+# target to preprocess a source file
+extractContour.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/extractContour.cpp.i
+.PHONY : extractContour.cpp.i
+
+extractContour.s: extractContour.cpp.s
+.PHONY : extractContour.s
+
+# target to generate assembly for a file
+extractContour.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/extractContour.cpp.s
+.PHONY : extractContour.cpp.s
+
 filter.obj: filter.cpp.obj
 .PHONY : filter.obj
 
@@ -224,6 +248,30 @@ histogram.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/histogram.cpp.s
 .PHONY : histogram.cpp.s
 
+houghTransform.obj: houghTransform.cpp.obj
+.PHONY : houghTransform.obj
+
+# target to build an object file
+houghTransform.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/houghTransform.cpp.obj
+.PHONY : houghTransform.cpp.obj
+
+houghTransform.i: houghTransform.cpp.i
+.PHONY : houghTransform.i
+
+# target to preprocess a source file
+houghTransform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/houghTransform.cpp.i
+.PHONY : houghTransform.cpp.i
+
+houghTransform.s: houghTransform.cpp.s
+.PHONY : houghTransform.s
+
+# target to generate assembly for a file
+houghTransform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/houghTransform.cpp.s
+.PHONY : houghTransform.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -271,6 +319,30 @@ region.s: region.cpp.s
 region.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/region.cpp.s
 .PHONY : region.cpp.s
+
+regionLabel.obj: regionLabel.cpp.obj
+.PHONY : regionLabel.obj
+
+# target to build an object file
+regionLabel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/regionLabel.cpp.obj
+.PHONY : regionLabel.cpp.obj
+
+regionLabel.i: regionLabel.cpp.i
+.PHONY : regionLabel.i
+
+# target to preprocess a source file
+regionLabel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/regionLabel.cpp.i
+.PHONY : regionLabel.cpp.i
+
+regionLabel.s: regionLabel.cpp.s
+.PHONY : regionLabel.s
+
+# target to generate assembly for a file
+regionLabel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_image.dir\build.make CMakeFiles/digital_image.dir/regionLabel.cpp.s
+.PHONY : regionLabel.cpp.s
 
 threshold.obj: threshold.cpp.obj
 .PHONY : threshold.obj
@@ -335,18 +407,27 @@ help:
 	@echo ... edgeDetection.obj
 	@echo ... edgeDetection.i
 	@echo ... edgeDetection.s
+	@echo ... extractContour.obj
+	@echo ... extractContour.i
+	@echo ... extractContour.s
 	@echo ... filter.obj
 	@echo ... filter.i
 	@echo ... filter.s
 	@echo ... histogram.obj
 	@echo ... histogram.i
 	@echo ... histogram.s
+	@echo ... houghTransform.obj
+	@echo ... houghTransform.i
+	@echo ... houghTransform.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... region.obj
 	@echo ... region.i
 	@echo ... region.s
+	@echo ... regionLabel.obj
+	@echo ... regionLabel.i
+	@echo ... regionLabel.s
 	@echo ... threshold.obj
 	@echo ... threshold.i
 	@echo ... threshold.s
